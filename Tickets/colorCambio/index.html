@@ -10,44 +10,53 @@
 </head>
 
 <body>
-    <div class="color-container">
-        <h1 class="titulo"><i class="fa-solid fa-palette"></i> Selector colores</h1>
-        <!-- ?bloque donde se cambiara el color -->
-        <div class="mostrarColor" id="colorPreview"></div>
-        <!-- ?Bloque que controla el Rojo o red (R) -->
-        <div class="sliderGroup">
-            <div class="slider-label">
-                <span class="color-name color-red"> Red (R)</span>
-                <span class="deslizador" id="redValue">128</span>
-            </div>
-            <input type="range" class="slider red-slider" id="redSlider" min="0" max="255" value="128">
+    <div class=" color-container">
+    <h1 class="titulo"><i class="fa-solid fa-palette"></i> Selector colores</h1>
+    <!-- ?bloque donde se cambiara el color -->
+    <div class="mostrarColor" id="colorPreview"></div>
+    <!-- ?Bloque que controla el Rojo o red (R) -->
+    <div class="sliderGroup">
+        <div class="slider-label">
+            <span class="color-name color-red"> Red (R)</span>
+            <span class="deslizador" id="redValue">128</span>
         </div>
-        <!-- ?Bloque que controla el verde o Green (G) -->
-        <div class="sliderGroup">
-            <div class="slider-label">
-                <span class="color-name color-Green"> Green (G)</span>
-                <span class="deslizador" id="greenValue">128</span>
-            </div>
-            <input type="range" class="slider green-slider" id="greenSlider" min="0" max="255" value="128">
-        </div>
-        <!-- ?Bloque que controla el azul o Blue (B) -->
-        <div class="sliderGroup">
-            <div class="slider-label">
-                <span class="color-name color-Blue"> Blue (R)</span>
-                <span class="deslizador" id="blueValue">128</span>
-            </div>
-            <input type="range" class="slider blue-slider" id="blueSlider" min="0" max="255" value="128">
-        </div>
-        <!-- todo: bloque donde se mostrara el color en Hexagesimal y RGB -->
-        <div class="colorInfo">
-            <div class="colo-Values">
-                <div class="value-item" id="rgbValue">RGB(128, 128, 128)</div>
-                <div class="value-item" id="hexValue">#808080</div>
-            </div>
-            <button class="copy-button" id="copyButton"> <i class="fa-solid fa-copy"></i> Copiar Codigo Hex</button>
-        </div>
+        <input type="range" class="slider red-slider" id="redSlider" min="0" max="255" value="128">
     </div>
+    <!-- ?Bloque que controla el verde o Green (G) -->
+    <div class="sliderGroup">
+        <div class="slider-label">
+            <span class="color-name color-Green"> Green (G)</span>
+            <span class="deslizador" id="greenValue">128</span>
+        </div>
+        <input type="range" class="slider green-slider" id="greenSlider" min="0" max="255" value="128">
+    </div>
+    <!-- ?Bloque que controla el azul o Blue (B) -->
+    <div class="sliderGroup">
+        <div class="slider-label">
+            <span class="color-name color-Blue"> Blue (R)</span>
+            <span class="deslizador" id="blueValue">128</span>
+        </div>
+        <input type="range" class="slider blue-slider" id="blueSlider" min="0" max="255" value="128">
+    </div>
+    <!-- todo: bloque donde se mostrara el color en Hexagesimal y RGB -->
+    <div class="colorInfo">
+        <div class="colo-Values">
+            <div class="value-item" id="rgbValue">RGB(128, 128, 128)</div>
+            <div class="value-item" id="hexValue">#808080</div>
+        </div>
+        <button class="copy-button" id="copyButton"> <i class="fa-solid fa-copy"></i> Copiar Codigo Hex</button>
+    </div>
+    </div>
+
+    <footer>
+        <div class="Patente"></div>
+        <span>Hecho con <i class="fa-solid fa-heart" style="color:#e25555;"></i> por <strong>Carl's<span
+                    style="color:#4f8cff;">{Dev}</span></strong></span>
+        <span class="Patente">Version 1.0</span>
+        </div>
+    </footer>
     <!-- !vinculacion con el JavaScript -->
     <script src="/Tickets/colorCambio/app.js"></script>
-</body>
+    </body>
+
 </html>
